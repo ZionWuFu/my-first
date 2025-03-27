@@ -1,0 +1,158 @@
+/* Basic styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 120px;
+}
+
+.navbar .nav-right a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar .profile {
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.donations-button {
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.donations-button:hover {
+    background-color: #f40612;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* Added padding to account for navbar */
+    background-color: #1c1c1c; /* Solid background color */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 12px 30px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.hero-content button:hover {
+    background-color: #f40612;
+}
+
+.hero-image {
+    position: absolute;
+    bottom: 10%;     /* You can adjust this to move the image further down */
+    right: 5%;       /* You can adjust this to move the image to the left or right */
+    width: 10%;      /* Reduced from 30% to make the image smaller */
+    height: auto;    /* Keeps the aspect ratio intact */
+    border-radius: 8px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.hero-image:hover {
+    opacity: 1;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    background-color: #222222;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.about-content img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.05);
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+}
